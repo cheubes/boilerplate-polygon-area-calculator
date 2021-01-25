@@ -72,26 +72,26 @@ class UnitTests(unittest.TestCase):
         expected = "Square(side=4)"
         self.assertEqual(actual, expected, 'Expected string representation of square after setting width to be "Square(side=4)"')
 
-    # def test_rectangle_picture(self):
-    #     self.rect.set_width(7)
-    #     self.rect.set_height(3)
-    #     actual = self.rect.get_picture()
-    #     expected = "*******\n*******\n*******\n"
-    #     self.assertEqual(actual, expected, 'Expected rectangle picture to be different.')
-    #
-    # def test_squaree_picture(self):
-    #     self.sq.set_side(2)
-    #     actual = self.sq.get_picture()
-    #     expected = "**\n**\n"
-    #     self.assertEqual(actual, expected, 'Expected square picture to be different.')
-    #
-    # def test_big_picture(self):
-    #     self.rect.set_width(51)
-    #     self.rect.set_height(3)
-    #     actual = self.rect.get_picture()
-    #     expected = "Too big for picture."
-    #     self.assertEqual(actual, expected, 'Expected message: "Too big for picture."')
-    #
+    def test_rectangle_picture(self):
+        self.rect.set_width(7)
+        self.rect.set_height(3)
+        actual = self.rect.get_picture()
+        expected = "*******\n*******\n*******\n"
+        self.assertEqual(actual, expected, 'Expected rectangle picture to be different.')
+
+    def test_squaree_picture(self):
+        self.sq.set_side(2)
+        actual = self.sq.get_picture()
+        expected = "**\n**\n"
+        self.assertEqual(actual, expected, 'Expected square picture to be different.')
+
+    def test_big_picture(self):
+        self.rect.set_width(51)
+        self.rect.set_height(3)
+        actual = self.rect.get_picture()
+        expected = "Too big for picture."
+        self.assertEqual(actual, expected, 'Expected message: "Too big for picture."')
+
     # def test_get_amount_inside(self):
     #     self.rect.set_height(10)
     #     self.rect.set_width(15)

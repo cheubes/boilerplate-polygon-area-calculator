@@ -32,31 +32,31 @@ class UnitTests(unittest.TestCase):
         expected = "Square(side=5)"
         self.assertEqual(actual, expected, 'Expected string representation of square to be "Square(side=5)"')
 
-    # def test_area(self):
-    #     actual = self.rect.get_area()
-    #     expected = 18
-    #     self.assertEqual(actual, expected, 'Expected area of rectangle to be 18')
-    #     actual = self.sq.get_area()
-    #     expected = 25
-    #     self.assertEqual(actual, expected, 'Expected area of rectangle to be 25')
-    #
-    #
-    # def test_perimeter(self):
-    #     actual = self.rect.get_perimeter()
-    #     expected = 18
-    #     self.assertEqual(actual, expected, 'Expected perimeter of rectangle to be 18')
-    #     actual = self.sq.get_perimeter()
-    #     expected = 20
-    #     self.assertEqual(actual, expected, 'Expected perimeter of rectangle to be 20')
-    #
-    # def test_diagonal(self):
-    #     actual = self.rect.get_diagonal()
-    #     expected = 6.708203932499369
-    #     self.assertEqual(actual, expected, 'Expected diagonal of rectangle to be 6.708203932499369')
-    #     actual = self.sq.get_diagonal()
-    #     expected = 7.0710678118654755
-    #     self.assertEqual(actual, expected, 'Expected diagonal of rectangle to be 7.0710678118654755')
-    #
+    def test_area(self):
+        actual = self.rect.get_area()
+        expected = 18
+        self.assertEqual(actual, expected, 'Expected area of rectangle to be 18')
+        actual = self.sq.get_area()
+        expected = 25
+        self.assertEqual(actual, expected, 'Expected area of rectangle to be 25')
+
+
+    def test_perimeter(self):
+        actual = self.rect.get_perimeter()
+        expected = 18
+        self.assertEqual(actual, expected, 'Expected perimeter of rectangle to be 18')
+        actual = self.sq.get_perimeter()
+        expected = 20
+        self.assertEqual(actual, expected, 'Expected perimeter of rectangle to be 20')
+
+    def test_diagonal(self):
+        actual = self.rect.get_diagonal()
+        expected = 6.708203932499369
+        self.assertEqual(actual, expected, 'Expected diagonal of rectangle to be 6.708203932499369')
+        actual = self.sq.get_diagonal()
+        expected = 7.0710678118654755
+        self.assertEqual(actual, expected, 'Expected diagonal of rectangle to be 7.0710678118654755')
+
     # def test_set_atributes(self):
     #     self.rect.set_width(7)
     #     self.rect.set_height(8)

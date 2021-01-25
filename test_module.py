@@ -22,16 +22,16 @@ class UnitTests(unittest.TestCase):
         expected = True
         self.assertEqual(actual, expected, 'Expected square object to be an instance of the Square class and the Rectangle class.')
 
-    # def test_rectangle_string(self):
-    #     actual = str(self.rect)
-    #     expected = "Rectangle(width=3, height=6)"
-    #     self.assertEqual(actual, expected, 'Expected string representation of rectangle to be "Rectangle(width=3, height=6)"')
-    #
-    # def test_square_string(self):
-    #     actual = str(self.sq)
-    #     expected = "Square(side=5)"
-    #     self.assertEqual(actual, expected, 'Expected string representation of square to be "Square(side=5)"')
-    #
+    def test_rectangle_string(self):
+        actual = str(self.rect)
+        expected = "Rectangle(width=3, height=6)"
+        self.assertEqual(actual, expected, 'Expected string representation of rectangle to be "Rectangle(width=3, height=6)"')
+
+    def test_square_string(self):
+        actual = str(self.sq)
+        expected = "Square(side=5)"
+        self.assertEqual(actual, expected, 'Expected string representation of square to be "Square(side=5)"')
+
     # def test_area(self):
     #     actual = self.rect.get_area()
     #     expected = 18

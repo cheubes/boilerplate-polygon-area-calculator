@@ -1,3 +1,5 @@
+import math
+
 class Rectangle:
 
     def __init__(self, width, height):
@@ -22,6 +24,11 @@ class Rectangle:
                 picture += '*'
             picture += '\n'
         return picture
+
+    def get_amount_inside(self, shape) :
+        in_height = math.floor(self.height / shape.height)
+        in_width = math.floor(self.width / shape.width)
+        return in_height * in_width
 
     def set_width(self, width):
         self.width = width

@@ -57,21 +57,21 @@ class UnitTests(unittest.TestCase):
         expected = 7.0710678118654755
         self.assertEqual(actual, expected, 'Expected diagonal of rectangle to be 7.0710678118654755')
 
-    # def test_set_atributes(self):
-    #     self.rect.set_width(7)
-    #     self.rect.set_height(8)
-    #     self.sq.set_side(2)
-    #     actual = str(self.rect)
-    #     expected = "Rectangle(width=7, height=8)"
-    #     self.assertEqual(actual, expected, 'Expected string representation of rectangle after setting new values to be "Rectangle(width=7, height=8)"')
-    #     actual = str(self.sq)
-    #     expected = "Square(side=2)"
-    #     self.assertEqual(actual, expected, 'Expected string representation of square after setting new values to be "Square(side=2)"')
-    #     self.sq.set_width(4)
-    #     actual = str(self.sq)
-    #     expected = "Square(side=4)"
-    #     self.assertEqual(actual, expected, 'Expected string representation of square after setting width to be "Square(side=4)"')
-    #
+    def test_set_atributes(self):
+        self.rect.set_width(7)
+        self.rect.set_height(8)
+        self.sq.set_side(2)
+        actual = str(self.rect)
+        expected = "Rectangle(width=7, height=8)"
+        self.assertEqual(actual, expected, 'Expected string representation of rectangle after setting new values to be "Rectangle(width=7, height=8)"')
+        actual = str(self.sq)
+        expected = "Square(side=2)"
+        self.assertEqual(actual, expected, 'Expected string representation of square after setting new values to be "Square(side=2)"')
+        self.sq.set_width(4)
+        actual = str(self.sq)
+        expected = "Square(side=4)"
+        self.assertEqual(actual, expected, 'Expected string representation of square after setting width to be "Square(side=4)"')
+
     # def test_rectangle_picture(self):
     #     self.rect.set_width(7)
     #     self.rect.set_height(3)
